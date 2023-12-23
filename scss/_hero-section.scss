@@ -1,0 +1,113 @@
+@use "variables";
+@use "buttons";
+@use "responsive";
+
+.site-logo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    column-gap: 12px;
+
+    .logo-part-left img {
+        @include responsive.sm {
+        width: 50px;
+        }
+    }
+}
+
+.top-site-bar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 50px 140px 0 140px;
+    color: variables.$gray-1;
+
+    @include responsive.sm {
+        padding: 32px;
+        }
+}
+
+.nav-bar ul {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    column-gap: 48px;
+    text-transform: capitalize;
+    align-items: center;
+
+    :hover:not(:last-child) {
+        text-decoration: underline;
+        cursor: pointer;
+    }
+    
+    &:not(:last-child) {
+        color: variables.$gray-1;
+        font-size: 16px;
+        font-weight: 500;
+                
+    }
+
+    & :last-child {
+        background: variables.$button-green;
+        padding: 10px 15px;
+        border-radius: 3px;
+        color: variables.$white;
+
+        &:hover {
+            background: variables.$sand-brown;
+            cursor: pointer;
+        }
+    }
+
+    @include responsive.sm {
+        display: none;
+    }
+
+    
+
+}   
+h1 {
+    color: variables.$gray-1;
+    font-size: 48px;
+    font-weight: 500;
+
+    @include responsive.sm {
+        font-size: 24px;
+    }
+    
+}
+
+.hero-page-container {
+    display: flex;
+    flex-direction: row;
+    padding: 0 180px;
+    justify-content: space-between;
+    padding-top: 72px;
+
+    .hero-page-content {
+        width: 100%;
+        font-size: 20px;
+
+        @include responsive.sm {
+            font-size: 10px;
+        }
+
+    }
+
+    @include responsive.sm {
+        padding: 30px; 
+        padding-right: 0;
+    }
+
+
+}
+
+.hero-page-image, img#hero-image {
+
+    @include responsive.sm {
+        height: 350px;
+        overflow: hidden;
+        float: left;
+    }
+}
+

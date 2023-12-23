@@ -1,0 +1,74 @@
+@use "variables";
+@use "responsive";
+
+.cta-button {
+    background: variables.$button-green;
+    border: none;
+    border-radius: 2px;
+    box-shadow: 0px 20px 40px 0px rgba(128, 143, 150, 0.19);
+    width: 350px;
+    height: 73px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+
+    @include responsive.sm {
+        width: 175px;
+        height: 36px;
+    }
+    
+
+    span {
+        text-transform: uppercase;
+        color: variables.$white;
+        letter-spacing: 2.48px;
+        padding-left: 28px;
+
+    
+
+        @include responsive.sm {
+        font-size: 10px;
+        padding-left: 15px;
+        }
+    }
+
+    img {
+        padding-right: 28px;
+
+        @include responsive.sm {
+            padding-right: 11px;
+            width: 15%;
+            }
+    }
+}
+
+.cta-button:hover {
+    background: variables.$sand-brown;
+    cursor: pointer;
+}
+
+input[type="submit"] {
+    background: variables.$button-green;
+    border-radius: 2px;
+    box-shadow: 0px 20px 40px 0px rgba(128, 143, 150, 0.19);
+    color: variables.$white;
+    width: 100%;
+    height: 73px;
+    text-align: left;
+    padding-left: 22px;
+    border: none;
+    text-transform: uppercase;
+
+    &:hover {
+        background: variables.$sand-brown;
+        cursor: pointer;
+        border: 3px solid variables.$gen-green;
+        color: variables.$gen-green;
+    }
+
+    @include responsive.sm {
+        width: 100%;
+        }
+
+}

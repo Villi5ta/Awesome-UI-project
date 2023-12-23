@@ -1,0 +1,100 @@
+@use "variables";
+@use "buttons";
+@use "responsive";
+
+
+.footer-container {
+    padding: 111px 100px;
+    background-color: variables.$sand-brown;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    column-gap: 67px;
+
+    @include responsive.sm {
+        grid-template-columns: 1fr;
+        padding: 32px 60px 40px 32px;
+        }
+}
+
+.footer-menu {
+
+        display: flex;
+        justify-content: space-evenly;
+     
+}
+
+.company-info {
+    font-size: 14px;
+    color: variables.$gray-2;
+}
+
+.site-logo-bottom {
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+
+    & img  {
+       max-width: 80%;
+    }
+}
+
+ul.social-pages {
+    list-style: none;
+    display: flex;
+    padding: 0;
+    column-gap: 16px;
+
+    .instagram a {
+        display: flex;
+        background-image: url(/images/BG.svg);
+        width: 32px;
+        height: 32px;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+.company-navigation {
+    object-fit: fill;
+    
+    @include responsive.sm {
+        span::before {
+            content: "Ipsum ";
+        }
+        }
+
+}
+
+.company-navigation ul, .support-navigation ul {
+    list-style: none;
+    color: variables.$gray-1;
+    font-weight: 400;
+    font-size: 16px;
+    row-gap: 12px;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+
+  
+}
+
+h5 {
+    margin: 24px 0;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.message-box {
+    display: flex;
+}
+
+form {
+   color: variables.$gen-green;
+}
+
+input[type="email"] {
+    margin: 13px 0 28px;
+    padding: 12px 137px 77px 24px;
+    border: none;
+
+}
