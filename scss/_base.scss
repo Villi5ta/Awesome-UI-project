@@ -39,10 +39,11 @@
     font-size: 41px;
     font-weight: 500;
     text-transform: uppercase;
-    margin: 0 0 17px 0;
+    margin: 17px 0 56px 0;
 
     @include responsive.sm {
       font-size: 20px;
+      margin: 8px 0 17px 0;
     }
   }
 
