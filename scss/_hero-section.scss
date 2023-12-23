@@ -1,6 +1,6 @@
-@use "variables";
-@use "buttons";
-@use "responsive";
+@use ".variables";
+@use ".buttons";
+@use ".responsive";
 
 .site-logo {
     display: flex;
