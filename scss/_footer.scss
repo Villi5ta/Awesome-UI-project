@@ -1,6 +1,6 @@
-@use ".variables";
-@use ".buttons";
-@use ".responsive";
+@use "variables";
+@use "buttons";
+@use "responsive";
 
 
 .footer-container {
@@ -20,7 +20,14 @@
 
         display: flex;
         justify-content: space-evenly;
+
+        h5 {
+            color: variables.$gen-green;
+        }
      
+        @include responsive.sm {
+            justify-content: space-between;
+            }
 }
 
 .company-info {
@@ -78,18 +85,13 @@ ul.social-pages {
   
 }
 
-h5 {
-    margin: 24px 0;
-    font-size: 20px;
-    font-weight: 500;
-}
-
 .message-box {
     display: flex;
 }
 
 form {
    color: variables.$gen-green;
+   font-size: 20px;
 }
 
 input[type="email"] {

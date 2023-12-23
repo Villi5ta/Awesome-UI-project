@@ -41,6 +41,12 @@ h3 {
   }
 }
 
+h5 {
+  margin: 24px 0;
+  font-size: 20px;
+  font-weight: 500;
+}
+
 .nav-icon {
   display: none;
 }
@@ -137,6 +143,14 @@ input[type=submit]:hover {
   display: flex;
   justify-content: space-evenly;
 }
+.footer-menu h5 {
+  color: #647B64;
+}
+@media screen and (max-width: 376px) {
+  .footer-menu {
+    justify-content: space-between;
+  }
+}
 
 .company-info {
   font-size: 14px;
@@ -190,18 +204,13 @@ ul.social-pages .instagram a {
   padding: 0;
 }
 
-h5 {
-  margin: 24px 0;
-  font-size: 20px;
-  font-weight: 500;
-}
-
 .message-box {
   display: flex;
 }
 
 form {
   color: #647B64;
+  font-size: 20px;
 }
 
 input[type=email] {
@@ -525,6 +534,8 @@ h1 {
 }
 
 .team-introduction-cards {
+  -moz-column-gap: 40px;
+       column-gap: 40px;
   display: flex;
   justify-content: space-evenly;
 }
@@ -571,6 +582,8 @@ p.person-role {
   text-transform: uppercase;
   font-weight: 500;
   font-size: 16px;
+  width: -moz-max-content;
+  width: max-content;
 }
 @media screen and (max-width: 376px) {
   p.person-role {

@@ -1,5 +1,5 @@
-@use ".variables";
-@use ".responsive";
+@use "variables";
+@use "responsive";
 
 .cta-button {
     background: variables.$button-green;
